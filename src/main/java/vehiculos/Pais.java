@@ -8,6 +8,9 @@ public class Pais {
         this.nombre = nombre;
     }
 
+    public static Pais paisMasVendedor() {
+        return null;
+    }
     public String getNombre() {
         return nombre;
     }

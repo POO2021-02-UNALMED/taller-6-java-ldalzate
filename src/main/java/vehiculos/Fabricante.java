@@ -9,6 +9,11 @@ public class Fabricante {
         this.nombre = nombre;
         this.pais = pais;
     }
+
+    public static Fabricante fabricaMayorVentas() {
+        return null
+    }
+
     public String getNombre() {
         return nombre;
     }
