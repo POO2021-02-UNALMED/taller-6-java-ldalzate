@@ -41,6 +41,10 @@ public class Vehiculo {
         return String.format("Automoviles: %d" + "Camionetas: %d" + "Camiones: %d", 0, 0, 0);
     }
 
+    public static void setCantidadVehiculos(int cantidadVehiculos) {
+        Vehiculo.cantidadVehiculos = cantidadVehiculos;
+    }
+
     public String getPlaca() {
         return placa;
     }
