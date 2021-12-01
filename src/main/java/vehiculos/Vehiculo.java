@@ -31,18 +31,19 @@ public class Vehiculo {
         this.precio = precio;
         this.peso = peso;
         this.fabricante = fabricante;
+        Fabricante.agregarFabricante(fabricante);
     }
 
     public static int getCantidadVehiculos() {
         return cantidadVehiculos;
     }
 
-    public static String vehiculosPorTipo() {
-        return String.format("Automoviles: %d" + "Camionetas: %d" + "Camiones: %d", 0, 0, 0);
-    }
-
     public static void setCantidadVehiculos(int cantidadVehiculos) {
         Vehiculo.cantidadVehiculos = cantidadVehiculos;
+    }
+
+    public static String vehiculosPorTipo() {
+        return String.format("Automoviles: %d" + "Camionetas: %d" + "Camiones: %d", 0, 0, 0);
     }
 
     public String getPlaca() {
